@@ -1,13 +1,13 @@
 {
-	"name": "@nxrs/cargo",
-	"version": "0.3.3",
+	"name": "@esmilis/cargo",
+	"version": "0.4.0",
 	"license": "MIT",
 	"main": "src/index.js",
 	"generators": "./generators.json",
 	"executors": "./executors.json",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/nxrs/cargo"
+		"url": "https://github.com/esmilis/cargo"
 	},
 	"author": {
 		"name": "Danny McGee",

@@ -36,9 +36,9 @@ export interface OutputOptions {
 	 * value](https://doc.rust-lang.org/cargo/reference/config.html). Defaults to `target`
 	 * in the root of the workspace.
 	 */
-  lambda_dir?: string;
+  lambdaDir?: string;
 
-  output_format?: string
+  outputFormat?: string
 }
 
 export interface DisplayOptions {

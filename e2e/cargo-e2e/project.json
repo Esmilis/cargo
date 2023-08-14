@@ -1,5 +1,6 @@
 {
-	"root": "e2e\\cargo-e2e",
+	"name": "cargo-e2e",
+	"$schema": "../../node_modules/nx/schemas/project-schema.json",
 	"projectType": "application",
 	"sourceRoot": "e2e\\cargo-e2e/src",
 	"targets": {

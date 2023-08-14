@@ -135,11 +135,9 @@ export function parseCargoArgs(opts: CargoOptions, ctx: ExecutorContext): string
 		args.push(`+${opts.toolchain}`);
 	}
 
-  args.push('lambda')
-
 	// prettier-ignore
 	switch (ctx.targetName) {
-		case "build": args.push("build"); break;
+		case "build": args.push("lambda", "build"); break;
 		case "test":  args.push("test");  break;
 		case "run": args.push("run"); break;
 		default: {
@@ -182,8 +180,8 @@ export function parseCargoArgs(opts: CargoOptions, ctx: ExecutorContext): string
 
 	if (opts.release) args.push("--release");
 	if (opts.targetDir) args.push("--target-dir", opts.targetDir);
-	if (opts.lambda_dir) args.push("--lambda-dir", opts.lambda_dir);
-	if (opts.output_format) args.push("--output-format", opts.output_format);
+	if (opts.lambdaDir) args.push("--lambda-dir", opts.lambdaDir);
+	if (opts.outputFormat) args.push("--output-format", opts.outputFormat);
 	if (opts.outDir) {
 		if (args[0] !== "+nightly") {
 			if (args[0].startsWith("+")) {

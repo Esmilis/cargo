@@ -1,5 +1,6 @@
 {
-	"root": "packages/cargo",
+	"name": "cargo",
+	"$schema": "../../node_modules/nx/schemas/project-schema.json",
 	"sourceRoot": "packages/cargo/src",
 	"projectType": "library",
 	"targets": {

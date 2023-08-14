@@ -37,15 +37,15 @@ export function processProjectGraph(
 						return;
 					}
 
-					builder.addNode({
-						name: depName,
-						type: "cargo" as any,
-						data: {
-							version: depPkg.version,
-							packageName: depPkg.name,
-							files: [],
-						},
-					});
+					// builder.addNode({
+					// 	name: depName,
+					// 	type: "cargo" as any,
+					// 	data: {
+					// 		version: depPkg.version,
+					// 		packageName: depPkg.name,
+					// 		files: [],
+					// 	},
+					// });
 				}
 
 				builder.addImplicitDependency(pkg.name, depName);

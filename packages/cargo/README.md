@@ -1,4 +1,4 @@
-# @nxrs/cargo
+# @esmilis/cargo
 
 [![npm version](https://badge.fury.io/js/%40nxrs%2Fcargo.svg)](https://badge.fury.io/js/%40nxrs%2Fcargo)
 
@@ -8,11 +8,11 @@ This is a WIP plugin for `@nrwl/nx` adding support for Rust applications and lib
 
 ```sh
 # @nxrs/cargo:bin also works
-> nx generate @nxrs/cargo:app my-rust-app
+> nx generate @esmilis/cargo:app my-rust-app
 ```
 
 ```sh
-> nx generate @nxrs/cargo:lib my-rust-lib
+> nx generate @esmilis/cargo:lib my-rust-lib
 ```
 
 ## Executors

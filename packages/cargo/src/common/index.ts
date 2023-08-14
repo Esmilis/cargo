@@ -137,7 +137,7 @@ export function parseCargoArgs(opts: CargoOptions, ctx: ExecutorContext): string
 
 	// prettier-ignore
 	switch (ctx.targetName) {
-		case "build": args.push("build"); break;
+		case "build": args.push("lambda", "build"); break;
 		case "test":  args.push("test");  break;
 		case "run": args.push("run"); break;
 		default: {
@@ -172,8 +172,16 @@ export function parseCargoArgs(opts: CargoOptions, ctx: ExecutorContext): string
 
 	if (opts.noDefaultFeatures) args.push("--no-default-features");
 	if (opts.target) args.push("--target", opts.target);
+	if (opts.arm64) args.push("--arm64");
+	if (opts.x86_64) args.push("--x86_64");
+
+
+
+
 	if (opts.release) args.push("--release");
 	if (opts.targetDir) args.push("--target-dir", opts.targetDir);
+	if (opts.lambdaDir) args.push("--lambda-dir", opts.lambdaDir);
+	if (opts.outputFormat) args.push("--output-format", opts.outputFormat);
 	if (opts.outDir) {
 		if (args[0] !== "+nightly") {
 			if (args[0].startsWith("+")) {

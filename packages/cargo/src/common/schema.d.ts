@@ -23,6 +23,10 @@ export interface CompilationOptions {
 	 * section for details on how this affects profile selection.
 	 */
 	release?: boolean;
+
+  arm64?: boolean;
+
+  x86_64?: boolean;
 }
 
 export interface OutputOptions {
@@ -32,7 +36,9 @@ export interface OutputOptions {
 	 * value](https://doc.rust-lang.org/cargo/reference/config.html). Defaults to `target`
 	 * in the root of the workspace.
 	 */
-	targetDir?: string;
+  lambdaDir?: string;
+
+  outputFormat?: string
 }
 
 export interface DisplayOptions {
